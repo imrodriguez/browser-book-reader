@@ -27,7 +27,7 @@ const Controls = ({ barColor }:Props): JSX.Element => {
           return (
             <div key={index}>
               {middlePosition === index && <span>{context.state.actualPage}/{context.state.numPages}</span>}
-              <IconButton onClick={() => element.action && context.dispatch({ type: element.action.type })} color="inherit">
+              <IconButton role={element.role} onClick={() => element.action && context.dispatch({ type: element.action.type })} color="inherit">
                 <Icon />
               </IconButton>
             </div>

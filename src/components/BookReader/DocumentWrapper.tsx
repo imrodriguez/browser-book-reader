@@ -4,7 +4,7 @@ import { Pages } from '../Pages';
 import { Document, pdfjs } from 'react-pdf';
 import { Wrapper } from './styles';
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 interface Props {
     file: string | typeof import("*.pdf");

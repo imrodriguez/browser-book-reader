@@ -15,7 +15,7 @@ type ProviderProps = {
     children: React.ReactNode, 
     mode: string | undefined,
     bookmarked: boolean | undefined,
-    onDownload: (() => void) | undefined
+    onDownload: (() => void) | undefined,
     onBookMark: (() => void) | undefined
 }
 
