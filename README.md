@@ -11,7 +11,7 @@ React component that allows you to set a PDF reader in your website with some fe
 * Docs with Storybook [TypeDoc](https://storybook.js.org/)
 
 ## Demo
-A minimal demo page can be found in our storybook documentation. [Online demo]()
+A minimal demo page can be found in our storybook documentation. [Online demo](https://imrodriguez.github.io/browser-book-reader)
 
 ## Getting Started
 
