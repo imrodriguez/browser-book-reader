@@ -21,7 +21,7 @@ const Controls = ({ barColor }:Props): JSX.Element => {
           const Icon = element.icon;
 
           if (element.visible === false) {
-            return <></>
+            return null
           }
 
           return (

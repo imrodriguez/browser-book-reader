@@ -22,8 +22,8 @@ const Pages = ({ numPages, mode, onLoad }: Props): JSX.Element => {
             return (<>
                 {[...Array(numPages).keys()].map((x, i) => {
                     return (
-                        <InView as="div" onChange={(inView, entry) => { if (inView && entry.boundingClientRect.height > 100) context.dispatch({ type: 'setActualPage', payload: i + 1 }) }}>
-                            <Page key={x} pageNumber={i + 1} />
+                        <InView key={x} as="div" onChange={(inView, entry) => { if (inView && entry.boundingClientRect.height > 100) context.dispatch({ type: 'setActualPage', payload: i + 1 }) }}>
+                            <Page pageNumber={i + 1} />
                         </InView>
                     )
                 })}
