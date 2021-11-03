@@ -1,6 +1,6 @@
 {
   "name": "browser-book-reader",
-  "version": "0.5.0",
+  "version": "0.7.0",
   "description": "A book reader for the browser build with react",
   "author": "Imanol Rodriguez <imrodriguez>",
   "repository": "https://github.com/imrodriguez/browser-book-reader",
@@ -19,11 +19,10 @@
     "test:watch": "jest --watch",
     "clean": "rm -rf dist build package",
     "ts-node": "ts-node",
-    "build": "tsc -p tsconfig.json && yarn run esbuild-browser",
+    "build": "tsc -p tsconfig.json",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "docs": "build-storybook -o docs",
-    "esbuild-browser": "esbuild src/browser.tsx --bundle --minify --sourcemap=external --outfile=dist/esbuild/browser.js"
+    "docs": "build-storybook -o docs"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
