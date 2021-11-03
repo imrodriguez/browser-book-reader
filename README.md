@@ -8,7 +8,7 @@ React component that allows you to set a PDF reader in your website with some fe
 * Linting with [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint) ([tslint](https://palantir.github.io/tslint/) is deprecated)
 * Testing with [Testing-library](https://testing-library.com/)
 * Continuous integration ([GitHub Actions](https://docs.github.com/en/actions))
-* Docs with Storybook [TypeDoc](https://storybook.js.org/)
+* Docs with Storybook [Storybook](https://storybook.js.org/)
 
 ## Demo
 A minimal demo page can be found in our storybook documentation. [Online demo](https://imrodriguez.github.io/browser-book-reader)
