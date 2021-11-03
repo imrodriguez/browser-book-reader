@@ -5,13 +5,17 @@ import IconButton from '@mui/material/IconButton';
 import { generateConfig } from './config';
 import { useReader } from '../../context/readerContext';
 
-const Controls = (): JSX.Element => {
+interface Props {
+  barColor?: string;
+}
+
+const Controls = ({ barColor }:Props): JSX.Element => {
   const context = useReader();
   const controlsConfig = generateConfig(context.state);
   const middlePosition = Math.round((controlsConfig.length - 1) / 2);
 
   return (
-    <AppBar position="sticky" color="primary" sx={{ top: 'auto', bottom: 0 }}>
+    <AppBar position="sticky" sx={{ top: 'auto', bottom: 0, backgroundColor: barColor }}>
       <Toolbar sx={{ justifyContent: "center" }}>
         {controlsConfig.map((element, index) => {
           const Icon = element.icon;

@@ -12,15 +12,16 @@ interface Props {
     bookmarked?: boolean;
     onDownload?: () => void;
     onBookMark?: () => void;
+    barColor?: string;
     styles?: string;
 }
-const BookReader = ({ file, mode, bookmarked, onDownload, onBookMark, styles }: Props): JSX.Element => (
+const BookReader = ({ file, mode, bookmarked, onDownload, onBookMark, barColor, styles }: Props): JSX.Element => (
     <ThemeProvider theme={theme}>
         <CssBaseline />
         <div id="browser-book-reader">
             <ReaderProvider mode={mode} bookmarked={bookmarked} onDownload={onDownload} onBookMark={onBookMark}>
                 <DocumentWrapper file={file} styles={styles || ''} />
-                <Controls />
+                <Controls barColor={barColor || undefined}/>
             </ReaderProvider>
         </div>
     </ThemeProvider>

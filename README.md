@@ -56,4 +56,5 @@ mode|The mode that will be diplay the document. Can be displayed page by page wi
 bookmarked|A boolean that indicates to the reader if the book is bookmarked. Can be true or false|n/a|true or false|
 onDownload|The callback function that will be executed when the user press the download button. If this function is not provided the button doesn't appears|n/a|() => { downloadPDF();}|
 onBookMark|The callback function that will be executed when the user press the bookmark button. If this function is not provided the button doesn't appears|n/a|() => { bookmark();}|
+barColor|String to set the color of the bottom bar that contains the action buttons|n/a|"#fff"|
 styles|String with styles that will be applied to the wrapper of the reader|n/a|"background: #fff; color: #000"|
